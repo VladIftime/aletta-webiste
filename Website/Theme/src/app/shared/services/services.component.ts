@@ -1,46 +1,43 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  styleUrls: ['./services.component.scss'],
 })
 
 /**
  * Services component
  */
 export class ServicesComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
-   servicesData = [
+  servicesData = [
     {
       icon: 'ti-settings',
-      title: 'Digital Design'
+      title: 'Secure and compliant',
     },
     {
       icon: 'ti-palette',
-      title: 'Unlimited Colors'
+      title: 'Time and cost efficient',
     },
     {
       icon: 'ti-stats-up',
-      title: 'Strategy Solutions'
+      title: 'Feasibility in multicenter studies',
     },
     {
       icon: 'ti-package',
-      title: 'Awesome Support'
+      title: 'Increased participant engagement and retention',
     },
     {
       icon: 'ti-dashboard',
-      title: 'Truly Multipurpose'
+      title: 'Efficient data capture',
     },
     {
       icon: 'ti-headphone',
-      title: 'Easy to customize'
-    } 
+      title: 'Better data management, reporting and tracking',
+    },
   ]
-
 }
