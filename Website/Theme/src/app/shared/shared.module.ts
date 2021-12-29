@@ -12,16 +12,15 @@ import { FaqComponent } from './faq/faq.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { SwitcherComponent } from './switcher/switcher.component';
 import { ScrollspyDirective } from './scrollspy.directive';
 
 @NgModule({
-  declarations: [ServicesComponent, FeaturesComponent, ClientComponent, TeamComponent, FaqComponent, PricingComponent, ContactComponent, FooterComponent, SwitcherComponent, ScrollspyDirective],
+  declarations: [ServicesComponent, FeaturesComponent, ClientComponent, TeamComponent, FaqComponent, PricingComponent, ContactComponent, FooterComponent, ScrollspyDirective],
   imports: [
     CommonModule,
     CarouselModule,
     ScrollToModule.forRoot()
   ],
-  exports: [ServicesComponent, FeaturesComponent, ClientComponent, TeamComponent, FaqComponent, PricingComponent, ContactComponent, FooterComponent, SwitcherComponent, ScrollspyDirective]
+  exports: [ServicesComponent, FeaturesComponent, ClientComponent, TeamComponent, FaqComponent, PricingComponent, ContactComponent, FooterComponent, ScrollspyDirective]
 })
 export class SharedModule { }

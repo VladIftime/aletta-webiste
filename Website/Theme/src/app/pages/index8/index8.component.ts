@@ -15,6 +15,9 @@ export class Index8Component implements OnInit {
   currentSection = 'home';
 
   ngOnInit(): void {
+    document
+      .getElementById('color-opt')
+      .setAttribute('href', 'assets/css/colors/default.css');
   }
   /**
    * Window scroll method
