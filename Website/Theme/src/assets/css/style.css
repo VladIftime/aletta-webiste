@@ -1305,7 +1305,7 @@ b {
 }
 
 .navbar-custom {
-  padding: 20px 0px;
+  padding: 10px 0px;
   width: 100%;
   border-radius: 0px;
   z-index: 999;
@@ -1552,6 +1552,42 @@ b {
 
 .multi-wave {
   background-image: url('../../assets/images/layered-waves.svg');
+}
+
+.stacked-blue-waves {
+  aspect-ratio: 960/87;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../../assets/images/blue-waves.svg');
+}
+
+.stacked-blue-yellow-waves {
+  aspect-ratio: 960/87;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../../assets/images/blue-yellow-waves.svg');
+}
+
+.bg-light-blue {
+  aspect-ratio: 960/87;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../../assets/images/blue-white-waves.svg');
+}
+
+.bg-yellow-wave {
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../../assets/images/yellow-waves.svg');
 }
 
 /*---DEMO - 9---*/
@@ -1983,7 +2019,7 @@ ul.pattern .color6 {
     height: 100vh;
   }
   .team-box {
-    margin-top: 45px;
+    margin-top: 10px;
   }
   .pricing-box {
     margin-top: 30px;

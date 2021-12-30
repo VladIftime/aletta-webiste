@@ -1,21 +1,32 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { NgxTypedJsModule } from 'ngx-typed-js';
-import { NgParticlesModule } from 'ng-particles';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { LottieModule } from 'ngx-lottie'
+import player from 'lottie-web'
+
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'
+import { NgxTypedJsModule } from 'ngx-typed-js'
+import { NgParticlesModule } from 'ng-particles'
+import { CarouselModule } from 'ngx-owl-carousel-o'
 
 import { PagesRoutingModule } from './pages-routing.module'
 
-import { SharedModule } from '../shared/shared.module';
-import { Index8Component } from './index8/index8.component';
-import { LoginComponent } from './login/login.component';
-import { PasswordForgetComponent } from './password-forget/password-forget.component';
-import { SignupComponent } from './signup/signup.component';
+import { SharedModule } from '../shared/shared.module'
+import { Index8Component } from './index8/index8.component'
+import { LoginComponent } from './login/login.component'
+import { PasswordForgetComponent } from './password-forget/password-forget.component'
+import { SignupComponent } from './signup/signup.component'
 
+export function playerFactory() {
+  return player
+}
 @NgModule({
-  declarations: [Index8Component, LoginComponent, PasswordForgetComponent, SignupComponent],
+  declarations: [
+    Index8Component,
+    LoginComponent,
+    PasswordForgetComponent,
+    SignupComponent,
+  ],
   imports: [
     CommonModule,
     SharedModule,
@@ -23,7 +34,7 @@ import { SignupComponent } from './signup/signup.component';
     ScrollToModule.forRoot(),
     NgxTypedJsModule,
     NgParticlesModule,
-    CarouselModule
-  ]
+    CarouselModule,
+  ],
 })
-export class PagesModule { }
+export class PagesModule {}

@@ -6,7 +6,7 @@
 >
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="../../../assets/images/Aletta logo.svg" width="100" alt="" />
+      <img src="/assets/images/Aletta logo.svg" width="90" alt="" />
     </a>
     <button
       class="navbar-toggler"
@@ -34,18 +34,6 @@
         </li>
         <li
           class="nav-item"
-          [ngClass]="{ active: currentSection === 'services' }"
-        >
-          <a
-            [ngxScrollTo]="'#services'"
-            class="nav-link"
-            href="javascript: void(0);"
-          >
-            Services
-          </a>
-        </li>
-        <li
-          class="nav-item"
           [ngClass]="{ active: currentSection === 'features' }"
         >
           <a
@@ -53,16 +41,7 @@
             class="nav-link"
             href="javascript: void(0);"
           >
-            Features
-          </a>
-        </li>
-        <li class="nav-item" [ngClass]="{ active: currentSection === 'testi' }">
-          <a
-            [ngxScrollTo]="'#testi'"
-            class="nav-link"
-            href="javascript: void(0);"
-          >
-            Client
+            Services
           </a>
         </li>
         <li class="nav-item" [ngClass]="{ active: currentSection === 'team' }">
@@ -72,27 +51,6 @@
             href="javascript: void(0);"
           >
             Team
-          </a>
-        </li>
-        <li class="nav-item" [ngClass]="{ active: currentSection === 'faq' }">
-          <a
-            [ngxScrollTo]="'#faq'"
-            class="nav-link"
-            href="javascript: void(0);"
-          >
-            FAQ
-          </a>
-        </li>
-        <li
-          class="nav-item"
-          [ngClass]="{ active: currentSection === 'pricing' }"
-        >
-          <a
-            [ngxScrollTo]="'#pricing'"
-            class="nav-link"
-            href="javascript: void(0);"
-          >
-            Pricing
           </a>
         </li>
         <li
@@ -129,14 +87,14 @@
             <div class="col-lg-10">
               <div class="text-center">
                 <h1 class="text-white home-title mb-0">
-                  A digital web studio creating stunning & engaging online
-                  experiences
+                  Are you struggling to get subjective data?
+                  <br />
+                  Meet Aletta ePro for clinical trials
                 </h1>
                 <p
                   class="text-white home-subtitle-center home-subtitle mt-4 mb-0 mx-auto"
                 >
-                  It is a long established fact that a reader will be of a page
-                  when established fact looking at its layout.
+                  Aletta's AI chatbot faciliates higher density of data
                 </p>
                 <div class="mt-4">
                   <a href="#" class="btn btn-outline-white btn-round">
@@ -154,10 +112,10 @@
   <!-- END HOME -->
 
   <app-features></app-features>
-  <app-client></app-client>
+  <!-- <app-client></app-client> -->
   <app-team></app-team>
-  <app-faq></app-faq>
-  <app-pricing></app-pricing>
+  <!--<app-faq></app-faq>
+  <app-pricing></app-pricing> -->
   <app-contact></app-contact>
   <app-footer></app-footer>
 </div>
